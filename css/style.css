@@ -33,7 +33,6 @@ h1 {
 	font-size: 38px;
 	font-weight: 700;
 	margin-bottom: 20px;
-	width: 100%;
 }
 h2 {
 	font-size: 28px;
@@ -899,4 +898,8 @@ border-radius: 50%;
 blockquote h6 {
 	font-size: 16px;
 	text-align: center;
+}
+
+#kakao h1 {
+	font-size: calc(22px + .5vw);
 }
