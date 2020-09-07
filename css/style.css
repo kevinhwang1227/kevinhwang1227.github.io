@@ -149,11 +149,11 @@ blockquote {
 	z-index: 2;
 }
 .subfooter {
-	background-color: #DA095F;
+	background-color: #ddb7ab;
 	padding: 40px 0;
 }
 .subfooter a {
-color: #FF89BA;
+color: #ffffff;
 }
 .section {
 	background-color: #ffffff;
@@ -171,12 +171,12 @@ color: #FF89BA;
 }
 .btn-primary {
 color: #fff;
-background-color: #BD0451;
+background-color: #ddb7ab;
 border:0px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
 color: #fff;
-background-color: #E00A63;
+background-color: #ddb7ab;
 border:0px;
 }
 .transprant-bg {
@@ -256,7 +256,7 @@ background: transparent;
 button.cta-button {
 font-size: 16px;
 line-height: 16px;
-border: 1px solid #fff;
+border: 1px solid #ddb7ab;
 padding: 20px 42px;
 border-radius: 4px;
 font-family: 'Raleway';
@@ -360,12 +360,12 @@ text-align:center;
 }
 .btn-default {
 	color: #FFFFFF;
-	background: #E00A63;
+	background: #ddb7ab;
 	border: 0;
 }
 .btn-default:hover {
 	color: #ffffff;
-	background-color: #BB0A53;
+	background-color:#ddb7ab;
 	border: 0;
 }
 
@@ -822,7 +822,7 @@ border-radius: 50%;
 }
 .isotope-item .btn-default {
 	color: #FFFFFF;
-	background: rgba(219, 10, 97, 0.69);
+	background: rgba(227, 197, 184, 0.69);
 	margin-top: -36px;
 	z-index: 2;
 	position: relative;
@@ -851,7 +851,7 @@ border-radius: 50%;
 	bottom: -1px;
 	left: 0;
 	right: -1px;
-	background-color: rgba(219, 10, 97, 0.78);
+	background-color: rgba(227, 197, 184, 0.78);
 	cursor: pointer;
 	overflow: hidden;
 	opacity: 0;
@@ -895,4 +895,7 @@ border-radius: 50%;
 	transform: scale(1);
 }
 
-.fa fa-
+blockquote h6 {
+	font-size: 16px;
+	text-align: center;
+}
