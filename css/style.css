@@ -57,10 +57,10 @@ h1 span,
 h2 span,
 h3 span,
 h4 span {
-	color: #ff9a90;
+	color: #ddb7ab;
 }
 .colored {
-	color: #ff9a90;
+	color: #821600;
 }
 a {
 	color: #55acee;
@@ -112,7 +112,7 @@ blockquote {
 ----------------------------------------------------------------------------- */
 .header {
 	color: #ffffff;
-	background-color: #2f4553;
+	background-color: #1e231c;
 	padding: 10px 0;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -129,8 +129,8 @@ blockquote {
 }
 .banner-image {
 	vertical-align: middle;
-	height: 900px;
-	width: 900px;
+	height: 100%;
+	width: 100%;
 	margin:auto;
 }
 .banner:after {
@@ -163,7 +163,7 @@ color: #FF89BA;
 /* Backgrounds
 ----------------------------------------------------------------------------- */
 .default-bg {
-	background-color: #2f4553;
+	background-color: #1e231c;
 	color: #ffffff;
 }
 .default-bg.blue {
@@ -232,7 +232,7 @@ border:0px;
 	z-index: 2;
 	width: 100%;
 	height: 100%;
-	background-color: #ff9a90;
+	background-color: #ddb7ab;
 }
 .transprant-bg.blue:after {
 	background-color: rgba(85, 172, 238, 0.7);
@@ -398,7 +398,7 @@ text-align:center;
 	display: inline-block;
 	width: 100%;
 	background-color: #fff;
-	color: #ff9a90;
+	color: #e3c5b8;
 	position: relative;
 	text-decoration: none;
 	border: #ECECEC 1px solid;
@@ -424,7 +424,7 @@ text-align:center;
 .panel-heading a:hover {
 	text-decoration: none;
 	background-color: #FFFFFF;
-	color: #ff9a90;
+	color: #ddb7ab;
 }
 .panel-title a i {
 	padding-right: 10px;
@@ -437,8 +437,8 @@ text-align:center;
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus,
 .nav-pills > li > a:hover {
-	background-color: #ff9a90;
-	border-color: #ff9a90;
+	background-color: #e3c5b8;
+	border-color: #e3c5b8;
 	color: #ffffff;
 }
 .nav-pills > li > a {
@@ -527,11 +527,11 @@ padding: 10px 0;
 }
 .main-navigation .navbar-default .navbar-nav > li.active > a {
 	background-color: transparent;
-	color: #ff9a90;
+	color: #ddb7ab;
 }
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-	color: #ff9a90;
+	color: #ddb7ab;
 }
 
 /* carousel */
@@ -666,7 +666,7 @@ padding: 10px 0;
 /* Fixed Header
 ----------------------------------------------------------------------------- */
 .fixed-header-on .header {
-	background-color: #2f4553;
+	background-color: #1e231c;
 	padding: 5px 0;
 }
 .fixed-header-on .brand {
@@ -894,3 +894,5 @@ border-radius: 50%;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+
+.fa fa-
