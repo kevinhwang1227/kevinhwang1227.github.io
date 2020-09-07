@@ -1,1 +1,3 @@
-# kevinhwang1227.github.io
+# Lolooming Website
+
+Simple advertising website for Lolooming
