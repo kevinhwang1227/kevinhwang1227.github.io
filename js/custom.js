@@ -247,7 +247,9 @@
 
 
                 var modalimage = document.createElement("img");
-                modalimage.setAttribute("src",details[3]);
+				modalimage.setAttribute("src",details[3]);
+				modalimage.setAttribute("width","300px");
+				modalimage.setAttribute("height","300px");
                 var linebreak = document.createElement("br");
                 var title = document.createElement("h3");
                 title.innerHTML = details[1];
