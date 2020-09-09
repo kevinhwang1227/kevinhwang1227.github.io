@@ -20,9 +20,37 @@
 		<link href="css/animations.css" rel="stylesheet"> 
 		<link href="css/style.css" rel="stylesheet"> 
 		<link href="css/custom.css" rel="stylesheet">
+
 	</head>
 
 	<body class="no-trans">
+
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+		<!-- Initialize Firebase -->
+		<script>
+			var config = {
+				apiKey: "AIzaSyA8U0e8VR1VxeY1mBE0jpZ9j4oV416yWaI",
+				authDomain: "lolooming.firebaseapp.com",
+				databaseURL: "https://lolooming.firebaseio.com",
+				storageBucket: "lolooming.appspot.com"
+			};
+			firebase.initializeApp(config);
+		</script>
+
+
+		
+
+		
 		<!-- scrollToTop --> 
 		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
 
@@ -42,7 +70,7 @@
 
 							<!-- name-and-slogan -->
 							<!-- <div class="logo-section smooth-scroll">
-								<div class="brand"><a href="#banner">Avenger</a></div>								
+								<div class="brand"><a href="#banner"></a></div>								
 							</div> -->
 
 						</div>
@@ -416,274 +444,8 @@
 						<!-- isotope filters end -->
 
 						<!-- portfolio items start -->
-						<div class="isotope-container row grid-space-20">
-							<div class="col-sm-6 col-md-3 isotope-item admin">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/member/llama.jpeg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-1">
-											<i class="fa fa-search-plus"></i>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">LeeLlama</a>
-								</div>
-								<!-- Modal -->
-								<div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-1-label">LeeLlama</h4>
-											</div>
-											<div class="modal-body">
-												
-												<div class="row">												 
-													<div class="col-md-12">
-														<img src="images/member/llama.jpeg" alt="">
-														<br/>
-														<h3>클럽장</h3>
-														<p>Gold</p>
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Modal end -->
-							</div>
-
-							<div class="col-sm-6 col-md-3 isotope-item admin">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/member/dopa.jpeg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-2">
-											<i class="fa fa-search-plus"></i>
-											 
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">도파</a>
-								</div>
-								<!-- Modal -->
-								<div class="modal fade" id="project-2" tabindex="-1" role="dialog" aria-labelledby="project-2-label" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-2-label">도파</h4>
-											</div>
-											<div class="modal-body">
-												
-												<div class="row">												 
-													<div class="col-md-12">
-														<img src="images/member/dopa.jpeg" alt="">
-														<br/>
-														<h3>내전/격전 컨텐츠 담당자</h3>
-														<p>Diamond</p>
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Modal end -->
-							</div>
+						<div class="isotope-container row grid-space-20" id="userlist">
 							
-							<div class="col-sm-6 col-md-3 isotope-item admin">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/member/odal.jpeg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-3">
-											<i class="fa fa-search-plus"></i> 
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">오달마왕</a>
-								</div>
-								<!-- Modal -->
-								<div class="modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-3-label">오달마왕</h4>
-											</div>
-											<div class="modal-body">
-												
-												<div class="row">												 
-													<div class="col-md-12">
-														<img src="images/member/odal.jpeg" alt="">
-														<br/>
-														<h3>디스코드 담당자</h3>
-														<p>Gold</p>
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Modal end -->
-							</div>
-							
-							<div class="col-sm-6 col-md-3 isotope-item admin">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/member/minsu.jpeg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-4">
-											<i class="fa fa-search-plus"></i> 
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-4">화난민수</a>
-								</div>
-								<!-- Modal -->
-								<div class="modal fade" id="project-4" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-4-label">화난민수</h4>
-											</div>
-											<div class="modal-body">
-												
-												<div class="row">												 
-													<div class="col-md-12">
-														<img src="images/member/minsu.jpeg" alt="">
-														<br/>
-														<h3>신입상담 및 신입관리 담당자</h3>
-														<p>Gold</p>
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Modal end -->
-							</div>
-							
-							<div class="col-sm-6 col-md-3 isotope-item admin">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/member/clyd.jpeg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-5">
-											<i class="fa fa-search-plus"></i> 
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-5">CLYD</a>
-								</div>
-								<!-- Modal -->
-								<div class="modal fade" id="project-5" tabindex="-1" role="dialog" aria-labelledby="project-5-label" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-5-label">CLYD</h4>
-											</div>
-											<div class="modal-body">
-												
-												<div class="row">												 
-													<div class="col-md-12">
-														<img src="images/member/clyd.jpeg" alt="">
-														<br/>
-														<h3>파티 및 신입상담 담당자</h3>
-														<p>Diamond</p>
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Modal end -->
-							</div>
-							
-							<div class="col-sm-6 col-md-3 isotope-item admin">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/member/kev.jpeg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-6">
-											<i class="fa fa-search-plus"></i> 
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-6">빅케빈</a>
-								</div>
-								<!-- Modal -->
-								<div class="modal fade" id="project-6" tabindex="-1" role="dialog" aria-labelledby="project-6-label" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-6-label">빅케빈</h4>
-											</div>
-											<div class="modal-body">
-												
-												<div class="row">												 
-													<div class="col-md-12">
-														<img src="images/member/kev.jpeg" alt="">
-														<br/>
-														<h3>홍보 담당자</h3>
-														<p>Platinum</p>
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Modal end -->
-							</div>
-							
-							<div class="col-sm-6 col-md-3 isotope-item member">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/portfolio-7.jpg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-7">
-											<i class="fa fa-search-plus"></i>
-											<span>Site Building</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-7">Project Title</a>
-								</div>
-								<!-- Modal -->
-								<div class="modal fade" id="project-7" tabindex="-1" role="dialog" aria-labelledby="project-7-label" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-7-label">Project Title</h4>
-											</div>
-											<div class="modal-body">
-												
-												<div class="row">												 
-													<div class="col-md-12">
-														<img src="images/portfolio-7.jpg" alt="">
-														<br/>
-														<h3>Project Description</h3>
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt.</p>
-													</div>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Modal end -->
-							</div>
 							
 
 						</div>
@@ -727,6 +489,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
+							<img src="images/logos_darker/dark_logo_transparent_background.png" width="60" class="center">
+						</br>
+						</div>
+
+						<div class="col-md-12">
 							<p class="text-center">Copyright © 2020 Template by 빅케빈.</p>
 						</div>
 					</div>
@@ -746,7 +513,14 @@
 		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
 
 		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/users.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
+
+
+		
+
+
+
 
 	</body>
 </html>

@@ -903,3 +903,9 @@ blockquote h6 {
 #kakao h1 {
 	font-size: calc(16px + .5vw);
 }
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
