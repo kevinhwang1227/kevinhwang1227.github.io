@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>LoLooming Clan</title>
+		<meta name="description" content="Responsive HTML5 Template">
+		<meta name="author" content="webthemez">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/logos_darker/logo_transparent_no_text.png">
+ 
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+		<link href="css/animations.css" rel="stylesheet"> 
+		<link href="css/style.css" rel="stylesheet"> 
+		<!-- <link href="css/custom.css" rel="stylesheet"> -->
+
+	</head>
+
+	<body class="no-trans">
+
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+		<!-- Initialize Firebase -->
+		<script>
+			var config = {
+				apiKey: "AIzaSyA8U0e8VR1VxeY1mBE0jpZ9j4oV416yWaI",
+				authDomain: "lolooming.firebaseapp.com",
+				databaseURL: "https://lolooming.firebaseio.com",
+				storageBucket: "lolooming.appspot.com"
+			};
+			firebase.initializeApp(config);
+		</script>
+
+
+		
+
+		
+		<!-- scrollToTop --> 
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- header start --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- header-left start --> 
+						<div class="header-left">
+
+							<!-- logo -->
+							<div class="logo smooth-scroll">
+								<a href="#banner"><img id="logo" src="images/logos_side/white_logo_transparent_background.png" alt="Worthy" width="180"></a>
+							</div>
+
+							<!-- name-and-slogan -->
+							<!-- <div class="logo-section smooth-scroll">
+								<div class="brand"><a href="#banner"></a></div>								
+							</div> -->
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					<div class="col-md-8">
+
+						<!-- header-right start --> 
+						<div class="header-right">
+
+							<!-- main-navigation start --> 
+							<div class="main-navigation animated">
+
+								<!-- navbar start --> 
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li><a href="index.html#banner">홈</a></li>
+												<li><a href="index.html#services">소개</a></li>
+												<li><a href="index.html#about">지원</a></li>
+												<li><a href="index.html#portfolio">클랜원</a></li>
+												<li class="active"><a href="#">내전 기록</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+		
+		<section class="hero-caption secPadding">
+
+		    <div class="container">
+	
+                <div class="row " style="margin-top: 120px;">
+                    <div class="col-sm-12">
+                        <h1><strong>내전 기록</strong></h1>
+                        <p>저희 클랜 LoLooming 은 매주 수요일 오후 9시, 일요일 오후 7시 내전을 진행합니다.
+                        </p>
+                    </div>
+                
+                </div>
+
+            </div>
+            
+        </section>
+        <!-- section start --> 
+
+        <section class="section secPadding" data-animation-effect="fadeIn">
+            <div class="container">
+                <section id="news" class="white-bg padding-top-bottom">
+                    <div class="container">
+                        <div class="timeline">
+                            <div class="date-title">
+                                <span>2020</span>
+                            </div>
+
+                            <div class="row">
+                                
+                                <div class="col-sm-6 news-item right">
+                                    <div class="news-content">
+                                        <div class="date">
+                                            <p>Sep 9</p> 
+                                        </div>
+                                        <h2 class="news-title">정기 내전</h2> 
+                                        <div class="row">	
+                                            <div class="col-sm-2">
+                                                <br>
+                                                <b>탑</b><br>
+                                                <b>정글</b><br>
+                                                <b>미드</b><br>
+                                                <b>원딜</b><br>
+                                                <b>서폿</b>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="win">Team A</strong><br>
+                                                오달마왕<br>
+                                                강찬밥보고배웠어<br>
+                                                CLYD<br>
+                                                데스츄르<br>
+                                                연세대코딩왕
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="lose">Team V</strong><br>
+                                                화난민수<br>
+                                                빅케빈<br>
+                                                이달빛<br>
+                                                Hikun<br>
+                                                Sstarbook
+                                            </div>
+                                        </div>
+                                        <a class="read-more" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-sm-6 news-item">
+                                    <div class="news-content">
+                                        <div class="date">
+                                            <p>Sep 2</p> 
+                                        </div>
+                                        <h2 class="news-title">정기 내전</h2> 
+                                        <div class="row">	
+                                            <div class="col-sm-2">
+                                                <br>
+                                                <b>탑</b><br>
+                                                <b>정글</b><br>
+                                                <b>미드</b><br>
+                                                <b>원딜</b><br>
+                                                <b>서폿</b>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="win">Team A</strong><br>
+                                                CLYD<br>
+                                                빅케빈<br>
+                                                Hikun<br>
+                                                생각하고 행동해<br>
+                                                개처럼 짖는 유미
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="lose">Team V</strong><br>
+                                                StarryNightRondo<br>
+                                                강찬밥보고배웠어<br>
+                                                화난민수<br>
+                                                Jas2mine<br>
+                                                초코꼬순내
+                                            </div>
+                                        </div>
+                                        <a class="read-more" href="#">Read More</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 news-item right">
+                                    <div class="news-content">
+                                        <div class="date">
+                                            <p>Aug 26</p> 
+                                        </div>
+                                        <h2 class="news-title">정기 내전</h2> 
+                                        <div class="row">	
+                                            <div class="col-sm-2">
+                                                <br>
+                                                <b>탑</b><br>
+                                                <b>정글</b><br>
+                                                <b>미드</b><br>
+                                                <b>원딜</b><br>
+                                                <b>서폿</b>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="win">Team A</strong><br>
+                                                CLYD<br>
+                                                강찬밥보고배웠어<br>
+                                                Doxx KR<br>
+                                                Hikun<br>
+                                                오달마왕
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="lose">Team V</strong><br>
+                                                화난민수<br>
+                                                빅케빈<br>
+                                                야스오노벤이여<br>
+                                                이달빛<br>
+                                                최다원
+                                            </div>
+                                        </div>
+                                        <a class="read-more" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 news-item">
+                                    <div class="news-content">
+                                        <div class="date">
+                                            <p>Aug 19</p> 
+                                        </div>
+                                        <h2 class="news-title">정기 내전</h2> 
+                                        <div class="row">	
+                                            <div class="col-sm-2">
+                                                <br>
+                                                <b>탑</b><br>
+                                                <b>정글</b><br>
+                                                <b>미드</b><br>
+                                                <b>원딜</b><br>
+                                                <b>서폿</b>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="lose">Team A</strong><br>
+                                                오달마왕<br>
+                                                화난민수<br>
+                                                Hikun<br>
+                                                이달빛<br>
+                                                Jas2mine
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="win">Team V</strong><br>
+                                                엉덩이빵빵빵<br>
+                                                빅케빈<br>
+                                                야스오노벤이여<br>
+                                                CLYD<br>
+                                                개처럼 짖는 유미
+                                            </div>
+                                        </div>
+                                        <a class="read-more" href="#">Read More</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 news-item right">
+                                    <div class="news-content">
+                                        <div class="date">
+                                            <p>Aug 12</p> 
+                                        </div>
+                                        <h2 class="news-title">정기 내전</h2> 
+                                        <div class="row">	
+                                            <div class="col-sm-2">
+                                                <br>
+                                                <b>탑</b><br>
+                                                <b>정글</b><br>
+                                                <b>미드</b><br>
+                                                <b>원딜</b><br>
+                                                <b>서폿</b>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="lose">Team A</strong><br>
+                                                생각하고 행동해<br>
+                                                아메바컬쳐<br>
+                                                이달빛<br>
+                                                덕과만<br>
+                                                민지야 또 먹냐
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="win">Team V</strong><br>
+                                                CLYD<br>
+                                                빅케빈<br>
+                                                강찬밥보고배웠어<br>
+                                                Belasco<br>
+                                                무조건muteall
+                                            </div>
+                                        </div>
+                                        <a class="read-more" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-sm-6 news-item">
+                                    <div class="news-content">
+                                        <div class="date">
+                                            <p>Aug 2</p> 
+                                        </div>
+                                        <h2 class="news-title">정기 내전</h2> 
+                                        <div class="row">	
+                                            <div class="col-sm-2">
+                                                <br>
+                                                <b>탑</b><br>
+                                                <b>정글</b><br>
+                                                <b>미드</b><br>
+                                                <b>원딜</b><br>
+                                                <b>서폿</b>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="lose">Team A</strong><br>
+                                                이건잘보일기회야<br>
+                                                Van Burnaby<br>
+                                                FoxStory<br>
+                                                덕과만<br>
+                                                봉춘식
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="win">Team V</strong><br>
+                                                CLYD<br>
+                                                빅케빈<br>
+                                                강찬밥보고배웠어<br>
+                                                Hikun<br>
+                                                무조건muteall
+                                            </div>
+                                        </div>
+                                        <a class="read-more" href="#">Read More</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 news-item right">
+                                    <div class="news-content">
+                                        <div class="date">
+                                            <p>Aug 1</p> 
+                                        </div>
+                                        <h2 class="news-title">스크림</h2> 
+                                        <div class="row">	
+                                            <div class="col-sm-2">
+                                                <br>
+                                                <b>탑</b><br>
+                                                <b>정글</b><br>
+                                                <b>미드</b><br>
+                                                <b>원딜</b><br>
+                                                <b>서폿</b>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="win">Lolooming</strong><br>
+                                                LeeLlama<br>
+                                                빅케빈<br>
+                                                Doxx KR<br>
+                                                덕과만<br>
+                                                이건잘보일기회야
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="lose">외부클랜</strong><br>
+                                                치킨나이트<br>
+                                                위험하면원딜버림<br>
+                                                하얀 자야<br>
+                                                맹분이<br>
+                                                미니쪼꼬
+                                            </div>
+                                        </div>
+                                        <a class="read-more" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">	
+                                <div class="col-sm-6 news-item">
+                                    <div class="news-content">
+                                        <div class="date">
+                                            <p>Jul 26</p> 
+                                        </div>
+                                        <h2 class="news-title">정기 내전</h2> 
+                                        <div class="row">	
+                                            <div class="col-sm-2">
+                                                <br>
+                                                <b>탑</b><br>
+                                                <b>정글</b><br>
+                                                <b>미드</b><br>
+                                                <b>원딜</b><br>
+                                                <b>서폿</b>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="win">Team A</strong><br>
+                                                오달마왕<br>
+                                                빅케빈<br>
+                                                Doxx KR<br>
+                                                Hikun<br>
+                                                LeeLlama
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="lose">Team V</strong><br>
+                                                Sstarbook<br>
+                                                강찬밥보고배웠어<br>
+                                                화난민수<br>
+                                                CLYD<br>
+                                                개처럼 짖는 유미
+                                            </div>
+                                        </div>
+                                        <a class="read-more" href="#">Read More</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 news-item right">
+                                    <div class="news-content">
+                                        <div class="date">
+                                            <p>Jul 22</p> 
+                                        </div>
+                                        <h2 class="news-title">즉석 내전</h2> 
+                                        <div class="row">	
+                                            <div class="col-sm-2">
+                                                <br>
+                                                <b>탑</b><br>
+                                                <b>정글</b><br>
+                                                <b>미드</b><br>
+                                                <b>원딜</b><br>
+                                                <b>서폿</b>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="lose">Team A</strong><br>
+                                                화난민수<br>
+                                                강찬밥보고배웠어<br>
+                                                또왜그러는데진짜<br>
+                                                봉춘식<br>
+                                                오달마왕
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <strong id="win">Team V</strong><br>
+                                                Sstarbook<br>
+                                                빅케빈<br>
+                                                LeeLlama<br>
+                                                CLYD<br>
+                                                개처럼 짖는 유미
+                                            </div>
+                                        </div>
+                                        <a class="read-more" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+		
+		<!-- footer start --> 
+		<footer id="footer">
+
+			<!-- .footer start --> 
+			
+			<!-- .footer end -->
+
+			<!-- .subfooter start --> 
+			<div class="subfooter">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="images/logos_darker/dark_logo_transparent_background.png" width="60" class="center">
+						</br>
+						</div>
+
+						<div class="col-md-12">
+							<p class="text-center">Copyright © 2020 Template by 빅케빈.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .subfooter end -->
+
+		</footer>
+		<!-- footer end -->
+
+		<!-- JavaScript --> 
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/history.js"></script>
+		<!-- <script type="text/javascript" src="js/custom.js"></script> -->
+
+
+		
+
+
+
+
+	</body>
+</html>
