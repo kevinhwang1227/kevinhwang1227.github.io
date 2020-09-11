@@ -26,6 +26,7 @@
 		
 		
 		// filter items on button click
+
 		$('.filters').on( 'click', 'ul.nav li a', function() {
 			var filterValue = $(this).attr('data-filter');
 			$(".filters").find("li.active").removeClass("active");
@@ -130,7 +131,7 @@
         //-----------------------------------------------
 		if($(".modal").length>0) {
             
-			console.log("modal executed")
+			// console.log("modal executed")
 			$(".modal").each(function() {
 				$(".modal").prependTo( "body" );
 			});
@@ -142,10 +143,10 @@
         return firebase.database().ref("/users/").once("value", function(snapshot) {
             var myValue = snapshot.val();
             
-            console.log("userblock executed")
+            // console.log("userblock executed")
 
             var keyList = Object.keys(myValue);
-			console.log(keyList);
+			// console.log(keyList);
 			
 
 			var block = document.createElement("div");
@@ -259,15 +260,19 @@
                 details.push(myValue[currKey].id_name);
                 details.push(myValue[currKey].title);
                 details.push(myValue[currKey].tier);
-                details.push(myValue[currKey].image_url);
+				details.push(myValue[currKey].image_url);
+				details.push(2021-myValue[currKey].age);
+				details.push(myValue[currKey].gender);
+				details.push(myValue[currKey].line);
 
-                console.log(details);
+				var lines = details[6].replace(',',' ');
+				// console.log(lines)
                 
                 if (details[1] != "클랜원") {
-					block.setAttribute("class","col-sm-4 col-md-2 isotope-item admin");
+					block.setAttribute("class",`col-sm-4 col-md-2 isotope-item admin ${lines}`);
 				}
 				else {
-					block.setAttribute("class","col-sm-4 col-md-2 isotope-item member");
+					block.setAttribute("class",`col-sm-4 col-md-2 isotope-item member ${lines}`);
 				}
 				initimage.setAttribute("src",details[3]);
 				var num = i+1;
@@ -287,15 +292,26 @@
 				modalimage.setAttribute("height","300px");
 
 				title.innerHTML = details[1];
-				paragraph.innerHTML = details[2];
+				if (details[5] == "male") {
+					var gender = "남";
+				} else {
+					var gender = "여";
+				}
+				var line_ex = details[6].replace("top","탑");
+				line_ex = line_ex.replace("jungle","정글");
+				line_ex = line_ex.replace("mid","미드");
+				line_ex = line_ex.replace("adc","원딜");
+				line_ex = line_ex.replace("support","서폿")
+
+				paragraph.innerHTML = `<b>Tier:</b> ${details[2]} <br> <b>Line:</b> ${line_ex} <br> <b>Age:</b> ${details[4]} <br> <b>Gender:</b> ${gender}`;
 
 				
 				var each_block = block.cloneNode(true);
-				console.log(each_block);
+				// console.log(each_block);
 
 				usertable.appendChild(each_block);
             }
-
+			
             callback();
         })
     };
