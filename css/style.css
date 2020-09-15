@@ -1202,3 +1202,8 @@ blockquote h6 {
 #lose {
 	color:#a13014;
 }
+
+#playername {
+	color:#9c867e;
+	font-weight: bold;
+}
